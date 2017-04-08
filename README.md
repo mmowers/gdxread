@@ -28,7 +28,7 @@ To get a pandas dataframe from GDX parameter:
 ```python
 import gdxread
 
-df = gdxread.get_df_from_param('/path/to/gdxfile')
+df = gdxread.get_df_from_param('path_to_gdx_file', 'param_name')
 ```
 
 ## Uninstall
