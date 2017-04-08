@@ -1,4 +1,4 @@
-#gdxread
+# gdxread
 
 Python package to read gdx data into pandas dataframes
 
@@ -34,5 +34,5 @@ df = gdxread.get_df_from_param('/path/to/gdxfile')
 ## Uninstall
 
 ```
-pip uninstall gdxpds
+pip uninstall gdxread
 ```
