@@ -9,8 +9,7 @@ setup(name='gdxread',
       packages=['gdxread'],
       install_requires=[
           'gams',
-          'os',
           'pandas',
           'gdxcc'
       ],
-      zip_safe=False)
+)
