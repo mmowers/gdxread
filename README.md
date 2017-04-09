@@ -17,14 +17,14 @@ Python package to read gdx data into pandas dataframes
   This will make available the *gdxcc* and *gams* python modules, which are imported by gdxread.
 
 ### Get the Latest Package
-
+From command line:
 ```bash
 pip install git+https://github.com/mmowers/gdxread.git@master
 ```
 
 ## Use
 
-To get a pandas dataframe from GDX parameter:
+To get a pandas dataframe from GDX parameter in a python script:
 
 ```python
 import gdxread
@@ -32,7 +32,9 @@ import gdxread
 df = gdxread.get_df_from_param('path_to_gdx_file', 'param_name')
 ```
 
-## Update/Upgrade
+## Update
+
+To update/upgrade gdxread, go to command line and enter:
 
 ```bash
 pip install git+https://github.com/mmowers/gdxread.git@master --upgrade
