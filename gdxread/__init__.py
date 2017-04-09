@@ -1,17 +1,14 @@
 import gams
-import os
 import pandas as pd
 import gdxcc
 
 def get_df_from_param(file_name, param_name):
     ws = gams.GamsWorkspace()
 
-    gdxFile = os.path.join(os.getcwd(), file_name)
-
     gdxHandle = gdxcc.new_gdxHandle_tp()
     rc =  gdxcc.gdxCreate(gdxHandle, gdxcc.GMS_SSSIZE)
     assert rc[0],rc[1]
-    assert gdxcc.gdxOpenRead(gdxHandle, gdxFile)[0]
+    assert gdxcc.gdxOpenRead(gdxHandle, file_name)[0]
     nrUels = gdxcc.gdxUMUelInfo(gdxHandle)[1]
     uelMap = []
 
